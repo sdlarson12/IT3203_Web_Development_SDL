@@ -6,10 +6,12 @@ a:link, a:visited {
     text-decoration: none;
     display: inline-block;
     font-family: "Georgia", Times, serif;
+    font-size: 40px;
 }
   
 a:hover, a:active {
     background-color: #ff0088;
+    font-size: 40px;
 }
 
 head, h1, h2 {
