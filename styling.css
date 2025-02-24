@@ -14,12 +14,18 @@ a:hover, a:active {
     font-size: 20px;
 }
 
-head, h1, h2 {
+head, h1{
     font-family: Arial, Verdana, sans-serif;
   }
+
+h2 {
+    font-family: Arial, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
   
 body {
-      background-color: paleturquoise;
+      background-color: rgba(175, 238, 238, 0.463);
       font-family: "Lucida Console", "Courier New", monospace;
   }
 
