@@ -19,10 +19,14 @@ head, h1, h2 {
   }
   
 body {
-      background-image: url("Images\\HTML Code Image.PNG");
+      background-color: paleturquoise;
       font-family: "Lucida Console", "Courier New", monospace;
   }
 
 p {
     font-family: Arial, Verdana, sans-serif;
+}
+.caption{
+    font-family: Arial, Verdana, sans-serif;
+    color: violet
 }
