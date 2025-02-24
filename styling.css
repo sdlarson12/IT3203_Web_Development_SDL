@@ -5,12 +5,20 @@ a:link, a:visited {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-  }
+}
   
-  a:hover, a:active {
+a:hover, a:active {
     background-color: #ff0088;
+}
+
+head, h2 {
+    font-family: Arial, Verdana, sans-serif;
   }
   
-  body {
+body {
       background-image: url("Images\HTML Code Image.PNG");
   }
+
+p {
+    font-family: Arial, Verdana, sans-serif;
+}
