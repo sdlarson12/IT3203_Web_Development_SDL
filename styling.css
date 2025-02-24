@@ -10,7 +10,7 @@ a:link, a:visited {
   
 a:hover, a:active {
     color: skyblue;
-    background-color: white;
+    background-color: whitesmoke;
     font-size: 20px;
     padding: 15px 25px;
     text-align: center;
@@ -18,7 +18,8 @@ a:hover, a:active {
 }
 
 head, h1{
-    font-family: Arial, Verdana, sans-serif;
+    font-family: 'Brush Script MT', cursive;
+    color: whitesmoke;
   }
 
 h2 {
