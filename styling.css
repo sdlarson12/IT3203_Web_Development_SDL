@@ -17,7 +17,8 @@ head, h1, h2 {
   }
   
 body {
-      background-image: url("Images\HTML Code Image.PNG");
+      background-image: url("Images\\HTML Code Image.PNG");
+      font-family: "Lucida Console", "Courier New", monospace;
   }
 
 p {
