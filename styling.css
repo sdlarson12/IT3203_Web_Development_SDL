@@ -55,6 +55,7 @@ p {
 
 .container {
     display: grid;
+    background-color: powderblue;
     grid-template-areas:
       "header header"
       "menu content";
