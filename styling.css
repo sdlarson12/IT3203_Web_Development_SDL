@@ -22,6 +22,7 @@ a:hover, a:active {
 head, h1{
     font-family: 'Brush Script MT', cursive;
     color: whitesmoke;
+    font-size: 60px;
   }
 
 h2 {
@@ -49,3 +50,17 @@ p {
     vertical-align: center;
     padding: 5px
 }
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: blue;
+    padding: 10px;
+  }
+  .container > div {
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+  }
