@@ -1,15 +1,17 @@
+/*Link styling*/
 a:link, a:visited {
     color: white;
     background-color: #efeb00;
+    font-size: 20px;
     padding: 15px 25px;
     text-align: center;
     display: inline-block;
     font-family: "Georgia", Times, serif;
-    font-size: 20px;
+    
 }
   
 a:hover, a:active {
-    color: skyblue;
+    color: #efeb00;
     background-color: whitesmoke;
     font-size: 20px;
     padding: 15px 25px;
@@ -29,17 +31,16 @@ h2 {
 }
   
 .body {
-      background-color: navy;
+      background-color: powderblue;
       font-family: "Lucida Console", "Courier New", monospace;
   }
 
 p {
     font-family: Arial, Verdana, sans-serif;
-    background-color: whitesmoke;
 }
 .caption{
     font-family: Arial, Verdana, sans-serif;
-    color: whitesmoke
+    color: black
 }
 
 .table {
