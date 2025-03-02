@@ -72,6 +72,7 @@ p {
   .container > div.header {
     grid-area: header;
     text-align: center;
+    color: lightcoral;
   }
 
   .container > div.menu {
