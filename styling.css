@@ -9,7 +9,8 @@ a:link, a:visited {
     font-family: "Georgia", Times, serif;
     
 }
-  
+ 
+/*Link hover and click styling*/
 a:hover, a:active {
     color: #efeb00;
     background-color: whitesmoke;
@@ -19,6 +20,7 @@ a:hover, a:active {
     font-family: "Georgia", Times, serif;
 }
 
+/*Primary heading styles*/
 head, h1{
 
     font-family: 'Brush Script MT', cursive;
@@ -27,6 +29,7 @@ head, h1{
     text-align: center;
   }
 
+/*Secondary heading styles*/
 h2 {
     color: whitesmoke;
     font-family: Arial, Verdana, sans-serif;
@@ -34,26 +37,32 @@ h2 {
     text-decoration: underline;
 }
   
+/*Body class for consistent styling*/
 .body {
       background-color: powderblue;
       font-family: "Lucida Console", "Courier New", monospace;
   }
 
+/*Paragraph styling*/  
 p {
     font-family: Arial, Verdana, sans-serif;
 }
+
+/*Caption styling class*/
 .caption{
     font-family: Arial, Verdana, sans-serif;
     color: black
 }
 
-.table {
+/*Table styling class*/
+#table {
     border: 1px solid;
     border-color: black;
     width: 50%;
     padding: 5px
 }
 
+/*Grid styling classes for summary page*/
 .container {
     display: grid;
     background-color: powderblue;
