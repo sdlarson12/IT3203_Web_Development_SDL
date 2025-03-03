@@ -1,5 +1,5 @@
 /*Link styling*/
-#a:link, #a:visited {
+a:link, a:visited {
     color: white;
     background-color: #efeb00;
     font-size: 20px;
@@ -10,7 +10,7 @@
     
 }
   
-#a:hover, #a:active {
+a:hover, a:active {
     color: #efeb00;
     background-color: whitesmoke;
     font-size: 20px;
@@ -20,6 +20,7 @@
 }
 
 head, h1{
+
     font-family: 'Brush Script MT', cursive;
     color: whitesmoke;
     font-size: 60px;
@@ -73,6 +74,7 @@ p {
     grid-area: header;
     text-align: center;
     color: lightcoral;
+    background-color: black;
   }
 
   .container > div.menu {
@@ -82,4 +84,6 @@ p {
   .container > div.content {
     grid-area: content;
   }
+
+
   
