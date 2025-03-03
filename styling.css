@@ -1,5 +1,5 @@
 /*Link styling*/
-.a:link, .a:visited {
+#a:link, #a:visited {
     color: white;
     background-color: #efeb00;
     font-size: 20px;
@@ -10,7 +10,7 @@
     
 }
   
-.a:hover, .a:active {
+#a:hover, #a:active {
     color: #efeb00;
     background-color: whitesmoke;
     font-size: 20px;
