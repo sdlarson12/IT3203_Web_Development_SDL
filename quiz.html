@@ -1,45 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz App</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
-    type="text/css" />
-  <link href="styling.css" rel="stylesheet"/>
-</head>
-<body>
-    <div id="main">
-        <h1>Interactive Quiz</h1>
-        <div class="questionContainer">
-        <div class="btnContainer">
-            <div class="prev"></div>
-            <div class="next"><a class="btnNext">Next ++</a></div>
-            <div class="clear"></div>
-        </div>
-        </div>
-        <div class="questionContainer">
-        <div class="btnContainer">
-            <div class="prev"><a class="btnPrev">-- Prev</a></div>
-            <div class="next"><a class="btnNext">Next ++</a></div>
-            <div class="clear"></div>
-        </div>
-        </div>
-        <div class="questionContainer">
-        <div class="btnContainer">
-            <div class="prev"><a class="btnPrev">-- Prev</a></div>
-            <div class="next"><a class="btnShowResult">Finish</a></div>
-            <div class="clear"></div>
-        </div>
-        </div>
-        <div class="txtStatusBar">Quiz Progress Bar 
-            <span class="errMsg hide"><strong>Please select an answer</strong></span></div>
-        <div id="progressContainer" style="display: block;">
-        <div id="progress"></div>
-        </div>
-    </div>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <form>
+      <label for="MC1">First Question</label><br>
+      <input type = "radio" id = "selection1" name = "MC1Answer1" value = "Selection One"><br>
+      <input type = "radio" id = "selection2" name = "MC1Answer2" value = "Selection Two"><br>
+      <input type = "radio" id = "selection3" name = "MC1Answer3" value = "Selection Three"><br>
+    </form>
+  </body>
+</html>
 
 <!--
 <!DOCTYPE html>
