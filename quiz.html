@@ -4,39 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
+    <link rel="stylesheet" href="styling.css">
   </head>
   <body id = "body">
-    <p>Which year was HTML first created?</p>
+    <p id="p">Which year was HTML first created?</p>
     <form>
-      <input type = "radio" id = "1985" name = "MC1Answer1" value = "1985">
+      <input type = "radio" id = "1985" name = "MC1Answer" value = "1985">
+      <label for="MC1">1985</label><br>
+      <input type = "radio" id = "1989" name = "MC1Answer" value = "1989">
+      <label for="MC2">1989</label><br>
+      <input type = "radio" id = "1991" name = "MC1Answer" value = "1991">
+      <label for="MC3">1991</label><br>
+      <input type="submit" value="Submit">
+    </form>
+    <p id="p">What was the name of the first graphic interface browser, released to the public in 1993?</p>
+    <form>
+      <input type = "radio" id = "PictureBrowser" name = "MC2Answer" value = "PictureBrowser">
+      <label for="MC1">Picture Browser</label><br>
+      <input type = "radio" id = "MosaicBrowser" name = "MC2Answer" value = "MosaicBrowser">
+      <label for="MC2">Mosaic Browser</label><br>
+      <input type = "radio" id = "MozartBrowser" name = "MC2Answer" value = "MozartBrowser">
+      <label for="MC3">Mozart Browser</label><br>
+      <input type="submit" value="Submit">
+    </form>
+    <p id="p">Third Question</p>
+    <form>
+      <input type = "radio" id = "selection1" name = "MC3Answer" value = "Selection One">
       <label for="MC1">Answer 1</label><br>
-      <input type = "radio" id = "1989" name = "MC1Answer2" value = "1989">
+      <input type = "radio" id = "selection2" name = "MC3Answer" value = "Selection Two">
       <label for="MC2">Answer 2</label><br>
-      <input type = "radio" id = "1991" name = "MC1Answer3" value = "1991">
+      <input type = "radio" id = "selection3" name = "MC3Answer" value = "Selection Three">
       <label for="MC3">Answer 3</label><br>
       <input type="submit" value="Submit">
     </form>
-    <p>Second Question</p>
-    <form>
-      <input type = "radio" id = "selection1" name = "MC1Answer1" value = "Selection One">
-      <label for="MC1">Answer 1</label><br>
-      <input type = "radio" id = "selection2" name = "MC1Answer2" value = "Selection Two">
-      <label for="MC2">Answer 2</label><br>
-      <input type = "radio" id = "selection3" name = "MC1Answer3" value = "Selection Three">
-      <label for="MC3">Answer 3</label><br>
-      <input type="submit" value="Submit">
-    </form>
-    <p>Third Question</p>
-    <form>
-      <input type = "radio" id = "selection1" name = "MC1Answer1" value = "Selection One">
-      <label for="MC1">Answer 1</label><br>
-      <input type = "radio" id = "selection2" name = "MC1Answer2" value = "Selection Two">
-      <label for="MC2">Answer 2</label><br>
-      <input type = "radio" id = "selection3" name = "MC1Answer3" value = "Selection Three">
-      <label for="MC3">Answer 3</label><br>
-      <input type="submit" value="Submit">
-    </form>
-    <p> Multi-Select Question</p>
+    <p id="p"> Multi-Select Question</p>
     <form>
       <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
       <label for="vehicle1"> I have a bike</label><br>
@@ -46,7 +47,7 @@
       <label for="vehicle3"> I have a boat</label>
       <input type="submit" value="Submit">
     </form>
-    <p>Fill-in the blank</p>
+    <p id="p">Fill-in the blank</p>
     <form action="/action_page.php">
       <label for="fname">First name:</label><br>
       <input type="text" id="fname" name="fname" value=""><br>
