@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
   </head>
-  <body>
+  <body id = "body">
     <p>First Question</p>
     <form>
       <input type = "radio" id = "selection1" name = "MC1Answer1" value = "Selection One">
@@ -32,6 +32,21 @@
       <label for="MC2">Answer 2</label><br>
       <input type = "radio" id = "selection3" name = "MC1Answer3" value = "Selection Three">
       <label for="MC3">Answer 3</label><br>
+    </form>
+    <p> Multi-Select Question</p>
+    <form>
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+      <label for="vehicle1"> I have a bike</label><br>
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+      <label for="vehicle2"> I have a car</label><br>
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+      <label for="vehicle3"> I have a boat</label>
+    </form>
+    <p>Fill-in the blank</p>
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
+      <input type="submit" value="Submit">
     </form>
   </body>
 </html>
