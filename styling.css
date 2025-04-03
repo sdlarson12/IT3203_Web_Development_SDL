@@ -25,7 +25,7 @@ head, h1{
 
     font-family: 'Brush Script MT', cursive;
     color: whitesmoke;
-    font-size: 60px;
+    font-size: 100px;
     text-align: center;
   }
 
@@ -93,4 +93,7 @@ h2 {
     grid-area: content;
   }
 
-  
+  /*Image styling*/
+  .image{
+    text-align: center;
+  }
