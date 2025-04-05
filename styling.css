@@ -1,28 +1,31 @@
 /*Link styling*/
-#a:link, #a:visited {
-    color: white;
+.a{
+  display: flex;
+  justify-content: space-evenly; /* Evenly space across the width */
+  align-items: center;
+  padding: 20px 0;
+}
+
+
+.a:link, .a:visited {
+    color: whitesmoke;
     background-color: #efeb00;
     font-size: 20px;
+    font-family: "Georgia", Times, serif;
     padding: 15px 25px;
     text-align: center;
-    display: flex;
-    justify-content: center;
     gap: 20px;
-    padding: 20px 0;
 }
  
 /*Link hover and click styling*/
-#a:hover, #a:active {
+.a:hover, .a:active {
     color: #efeb00;
     background-color: whitesmoke;
     font-size: 20px;
+    font-family: "Georgia", Times, serif;
     padding: 15px 25px;
     text-align: center;
-    font-family: "Georgia", Times, serif;
-    display: flex;
-    justify-content: center;
     gap: 20px;
-    padding: 20px 0;
 }
 
 /*Primary heading styles*/
@@ -30,7 +33,7 @@ head, h1{
 
     font-family: 'Brush Script MT', cursive;
     color: whitesmoke;
-    font-size: 100px;
+    font-size: 80px;
     text-align: center;
   }
 
@@ -64,7 +67,8 @@ h2 {
     border: 1px solid;
     border-color: black;
     width: 50%;
-    padding: 5px
+    padding: 5px;
+    background-color: whitesmoke;
 }
 
 /*Grid styling classes for summary page*/
