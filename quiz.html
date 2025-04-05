@@ -12,7 +12,7 @@
     <!--Header for page-->
     <h2>Test Your Knowledge</h2>
     <div></div>
-    <form></form>
+    <form onsubmit = "score(event)">
       <!--Question 1: Multiple Choice-->
       <p id="p">Which year was HTML first created?</p>
     
@@ -58,10 +58,13 @@
     
       <label for="fname">Standard Name: </label><br>
       <input type="text" id="fname" name="fname" value=""><br><br>
+
+      <!--Submit Button-->
+      <button type="submit">Submit Answers</button>
     </form>
     <div id = "result"></div>
     <div></div>
-    <button type="submit">Submit Answers</button>
+    
     <script>
       function score(event){
         
