@@ -7,7 +7,7 @@
 }
 
 
-.links a {
+.nav-link {
     color: whitesmoke;
     background-color: #efeb00;
     font-size: 20px;
@@ -18,7 +18,7 @@
 }
  
 /*Link hover and click styling*/
-.links a:hover, .links a:active {
+.nav-link:hover, .nav-link:active {
     color: #efeb00;
     background-color: whitesmoke;
     font-size: 20px;
