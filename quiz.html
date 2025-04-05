@@ -56,8 +56,8 @@
       <!--Question 5: Fill-In Answer-->
       <p id="p">What is the current version of HTML that is approved by W3C?</p>
     
-      <label for="fname">Standard Name: </label><br>
-      <input type="text" id="fname" name="fname" value=""><br><br>
+      <label for="Answer5">Standard Name: </label><br>
+      <input type="text" id="Answer5" name="Answer5" value=""><br><br>
 
       <!--Submit Button-->
       <button type="submit">Submit Answers</button>
@@ -70,7 +70,7 @@
         
         let score = 0;
         const total = 5;
-        const result = 5;
+        const result = document.getElementById("result");
 
         result.innerHTML = '<h3>Quiz Results"</h3><p>"Your score is ${score}</p>'
       }
