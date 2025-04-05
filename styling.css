@@ -1,7 +1,7 @@
 /*Link styling*/
 .links {
   display: flex;
-  justify-content: space-evenly; /* Evenly space across the width */
+  justify-content: center;
   align-items: center;
   padding: 20px 0;
 }
