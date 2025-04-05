@@ -6,8 +6,7 @@
   padding: 20px 0;
 }
 
-
-.nav-link {
+.links {
     color: whitesmoke;
     background-color: #efeb00;
     font-size: 20px;
@@ -18,7 +17,7 @@
 }
  
 /*Link hover and click styling*/
-.nav-link:hover, .nav-link:active {
+.links:hover, .links:active {
     color: #efeb00;
     background-color: whitesmoke;
     font-size: 20px;
