@@ -5,13 +5,10 @@
     font-size: 20px;
     padding: 15px 25px;
     text-align: center;
-    display: inline-block;
-    font-family: "Georgia", Times, serif;
-    display: grid;
-    grid-auto-flow: row;
-    gap: 20px;
+    display: flex;
     justify-content: center;
-    margin: 40px 0;
+    gap: 20px;
+    padding: 20px 0;
 }
  
 /*Link hover and click styling*/
@@ -22,11 +19,10 @@
     padding: 15px 25px;
     text-align: center;
     font-family: "Georgia", Times, serif;
-    display: grid;
-    grid-auto-flow: row;
-    gap: 20px;
+    display: flex;
     justify-content: center;
-    margin: 40px 0;
+    gap: 20px;
+    padding: 20px 0;
 }
 
 /*Primary heading styles*/
