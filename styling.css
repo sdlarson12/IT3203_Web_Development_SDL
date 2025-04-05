@@ -1,5 +1,5 @@
 /*Link styling*/
-.a{
+.links {
   display: flex;
   justify-content: space-evenly; /* Evenly space across the width */
   align-items: center;
@@ -7,7 +7,7 @@
 }
 
 
-.a:link, .a:visited {
+.links a {
     color: whitesmoke;
     background-color: #efeb00;
     font-size: 20px;
@@ -18,7 +18,7 @@
 }
  
 /*Link hover and click styling*/
-.a:hover, .a:active {
+.links a:hover, .links a:active {
     color: #efeb00;
     background-color: whitesmoke;
     font-size: 20px;
