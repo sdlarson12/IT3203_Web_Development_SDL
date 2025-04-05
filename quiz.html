@@ -10,9 +10,9 @@
   </head>
   <body class = "body">
     <!--Header for page-->
-    <h2>Test Your Knowledge</h2>
+    <h1>Test Your Knowledge</h1>
     <div></div>
-    <form onsubmit = "score(event)">
+    <form id = "quizForm" "onsubmit = "score(event)">
       <!--Question 1: Multiple Choice-->
       <p id="p">Which year was HTML first created?</p>
     
@@ -72,12 +72,7 @@
         const total = 5;
         const result = 5;
 
-        console.log("Your score is ", result)
-        if (result >= 5){
-          console.log("You passed the quiz!");
-        } else{
-          console.log("You did not pass. Try again!");
-        };
+        result.innerHTML = '<h3>Quiz Results"</h3><p>"Your score is ${score}</p>'
       }
     </script>
     <div></div>
