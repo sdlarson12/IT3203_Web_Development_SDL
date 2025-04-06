@@ -76,14 +76,22 @@
         if (answer1.value === "1991") score++;
 
         const answer2 = document.querySelector('input[name="MC2Answer"]:checked');
-        if (answer2.value === "Mosaic Browser") score++;
+        if (answer2.value === "MosaicBrowser") score++;
 
         const answer3 = document.querySelector('input[name="MC3Answer"]:checked');
         if (answer3.value === "CSS") score++;
 
+        if (score > 3){
+          const PassFail = "Congratulations, you passed!"
+        }
+        else{
+          const PassFail = "You did not pass. Please try again."
+        }
+
         result.innerHTML = `
           <h3>Quiz Results</h3>
           <p class = "p">Your score is ${score}/${total}</p><br>
+          <p class = "p">${PassFail}>/p>
           <p class = "p">The correct answers are as follows:</p><br>
           <ul class = "p">
             <li>Question 1: 1991</li>
