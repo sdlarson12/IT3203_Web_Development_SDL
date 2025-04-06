@@ -12,7 +12,7 @@
     <!--Header for page-->
     <h1>Test Your Knowledge</h1>
     <div></div>
-    <form id = "quizForm" "onsubmit = "score(event)">
+    <form id = "quizForm" "onsubmit = "score(event)" action="/action_page.php">
       <!--Question 1: Multiple Choice-->
       <p id="p">Which year was HTML first created?</p>
     
@@ -68,9 +68,11 @@
     <script>
       function score(event){
         
-        let score = 0;
+        const score = 0;
         const total = 5;
         const result = document.getElementById("result");
+
+
 
         result.innerHTML = `
           <h3>Quiz Results</h3>
