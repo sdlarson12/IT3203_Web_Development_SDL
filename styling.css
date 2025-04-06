@@ -58,7 +58,8 @@ h2 {
 /*Caption styling class*/
 .caption{
     font-family: Arial, Verdana, sans-serif;
-    color: black
+    color: black;
+    text-align: center;
 }
 
 /*Table styling class*/
@@ -68,6 +69,7 @@ h2 {
     width: 50%;
     padding: 5px;
     background-color: whitesmoke;
+    align-self: center;
 }
 
 /*Grid styling classes for summary page*/
