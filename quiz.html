@@ -10,7 +10,7 @@
   </head>
   <body class = "body">
     <!--Header for page-->
-    <h1>Test Your Knowledge</h1>
+    <h2>Test Your Knowledge</h2>
     <div></div>
     <form id = "quizForm" onsubmit = "score(event)">
       <!--Question 1: Multiple Choice-->
@@ -73,13 +73,13 @@
         const result = document.getElementById("result");
 
         const answer1 = document.querySelector('input[name="MC1Answer"]:checked');
-        if (answer1 === "1991") score++;
+        if (answer1.value === "1991") score++;
 
         const answer2 = document.querySelector('input[name="MC2Answer"]:checked');
-        if (answer2 === "Mosaic Browser") score++;
+        if (answer2.value === "Mosaic Browser") score++;
 
         const answer3 = document.querySelector('input[name="MC3Answer"]:checked');
-        if (answer3 === "CSS") score++;
+        if (answer3.value === "CSS") score++;
 
         result.innerHTML = `
           <h3>Quiz Results</h3>
