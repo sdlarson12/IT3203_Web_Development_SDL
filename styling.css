@@ -111,6 +111,8 @@ h2 {
   /*Image styling*/
   .image{
     align-items: center;
+    height: 50%;
+    width: 50%;
   }
 
   /*Button styling*/
@@ -126,7 +128,7 @@ h2 {
   }
 
   /*Styling to make background of index page the image at 50% transparency*/
-  indexBG {
+  .indexBG {
     position: relative;
     margin: 0;
     padding: 0;
@@ -134,9 +136,9 @@ h2 {
     z-index: 1;
   }
   
-  indexBG::before {
+  .indexBG::before {
     content: "";
-    background: url("Images/HTML Code Image.PNG") no-repeat center center fixed;
+    background: url("Images/HTMLCodeImage.PNG") no-repeat center center fixed;
     background-size: cover;
     opacity: 0.5;
     position: fixed;
