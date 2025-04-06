@@ -65,6 +65,7 @@
     <div id = "result"></div>
     <div></div>
     
+    <!--Javascript function to score answers and output results to the page-->
     <script>
       function score(event){
         event.preventDefault();
@@ -93,12 +94,14 @@
         }
         else score += 0;
 
-        /*Question 4 Answer Store*/
-        const answer4 = document.querySelectorAll('input[name="MS"]:checked');
-        if (answer4[0] === "MS1" && answer4[1] === "MS3") {
-          score++
+        /*Question 4 Answer Store. Get individual elements and one predicate statement to give a point or not.*/
+        const MS1 = document.getElementById("MS1").checked;
+        const MS2 = document.getElementById("MS2").checked;
+        const MS3 = document.getElementById("MS3").checked;
+        if (MS1 && !MS2 && MS3) {
+          score++;
         }
-        else score += 0;
+        else score += 0
 
         /*Question 5 Answer Store*/
         const answer5 = document.querySelector('input[name="Answer5"]')
@@ -130,7 +133,7 @@
           `;
       }
     </script>
-    <p id = "p">Click <a href="quiz.html"> here</a> to retake the quiz</p>
+    <p id = "p">Click <a href="quiz.html"> here</a> to retake the quiz!</p>
     <div></div>
     <a class = "links" href = "summary.html">Summary</a>
     <a class = "links" href = "history.html">History</a>
