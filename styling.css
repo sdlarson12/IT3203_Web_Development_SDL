@@ -34,7 +34,6 @@
 head, h1{
 
     font-family: 'Brush Script MT', cursive;
-    color: whitesmoke;
     font-size: 80px;
     text-align: center;
   }
@@ -140,7 +139,7 @@ h2 {
     content: "";
     background: url("Images/HTMLCodeImage.PNG") no-repeat center center fixed;
     background-size: cover;
-    opacity: 0.5;
+    opacity: 0.3;
     position: fixed;
     top: 0;
     left: 0;
