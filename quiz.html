@@ -72,11 +72,18 @@
         const total = 5;
         const result = document.getElementById("result");
 
+        const answer1 = document.querySelector('input[name="MC1"]:checked');
+        if (answer1 && answer1.value === "1991") score++;
 
+        const answer2 = document.querySelector('input[name="MC2"]:checked');
+        if (answer2 && answer2.value === "Mosaic Browser") score++;
+
+        const answer3 = document.querySelector('input[name="MC3"]:checked');
+        if (answer3 && answer3.value === "CSS") score++;
 
         result.innerHTML = `
           <h3>Quiz Results</h3>
-          <p class = "p">Your score is ${score}</p><br>
+          <p class = "p">Your score is ${score}/${total}</p><br>
           <p class = "p">The correct answers are as follows:</p><br>
           <p class = "p">They're all correct</p>
           `;
