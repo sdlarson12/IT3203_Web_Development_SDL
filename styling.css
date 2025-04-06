@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px 0;
+  width: 200px;
 }
 
 .links {
@@ -11,9 +12,10 @@
     background-color: #efeb00;
     font-size: 20px;
     font-family: "Georgia", Times, serif;
-    padding: 15px 25px;
+    padding: 20px;
     text-align: center;
     gap: 20px;
+    width: 200px;
 }
  
 /*Link hover and click styling*/
@@ -25,6 +27,7 @@
     padding: 15px 25px;
     text-align: center;
     gap: 20px;
+    width: 200px;
 }
 
 /*Primary heading styles*/
@@ -63,7 +66,7 @@ h2 {
 }
 
 /*Table styling class*/
-#table {
+.table {
     border: 1px solid;
     border-color: black;
     width: 50%;
@@ -92,7 +95,10 @@ h2 {
   .container > div.header {
     grid-area: header;
     text-align: center;
-    background-color: lightcoral;
+    color: whitesmoke;
+    font-family: Arial, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: underline;
   }
 
   .container > div.menu {

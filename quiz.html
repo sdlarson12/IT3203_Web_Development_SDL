@@ -57,7 +57,7 @@
       <p id="p">What is the current version of HTML that is approved by W3C?</p>
     
       <label for="Answer5">Standard Name: </label><br>
-      <input type="text" id="Answer5" name="Answer5" value=""><br><br>
+      <input type="text" id="Answer5" name="Answer5" value=""><br><br maxlength = "20">
 
       <!--Submit Button-->
       <button type="submit">Submit Answers</button>
@@ -117,10 +117,10 @@
 
         result.innerHTML = `
           <h3>Quiz Results</h3>
-          <p class = "p">Your score is ${score}/${total}</p>
-          <p class = "p">${PassFail}</p>
-          <p class = "p">The correct answers are as follows:</p>
-          <ul class = "p">
+          <p id = "p">Your score is ${score}/${total}</p>
+          <p id = "p">${PassFail}</p>
+          <p id = "p">The correct answers are as follows:</p>
+          <ul id = "p">
             <li>Question 1: 1991</li>
             <li>Question 2: Mosaic Browser</li>
             <li>Question 3: CSS</li>
