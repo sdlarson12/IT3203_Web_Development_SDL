@@ -81,6 +81,10 @@
         const answer3 = document.querySelector('input[name="MC3Answer"]:checked');
         if (answer3.value === "CSS") score++;
 
+        /*Question 5 Answer Store*/
+        const answer5 = document.querySelector('input[name="textAnswer"]').value
+        if (answer5.value === "HTML5") score++;
+
         let PassFail = ""
         if (score > 3){
           const PassFail = "Congratulations, you passed!"
@@ -91,8 +95,8 @@
 
         result.innerHTML = `
           <h3>Quiz Results</h3>
-          <p class = "p">Your score is ${score}/${total}</p><br>
-          <p class = "p">${PassFail}>/p>
+          <p class = "p">Your score is ${score}/${total}</p>
+          <p class = "p">${PassFail}</p>
           <p class = "p">The correct answers are as follows:</p><br>
           <ul class = "p">
             <li>Question 1: 1991</li>
