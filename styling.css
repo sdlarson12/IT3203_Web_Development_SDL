@@ -5,6 +5,7 @@
   align-items: center;
   padding: 20px;
   width: 200px;
+  border: black;
 }
 
 .links {
@@ -16,6 +17,7 @@
     text-align: center;
     gap: 20px;
     width: 200px;
+    border: black;
 }
  
 /*Link hover and click styling*/
@@ -28,6 +30,7 @@
     text-align: center;
     gap: 20px;
     width: 200px;
+    border: black;
 }
 
 /*Primary heading styles*/
