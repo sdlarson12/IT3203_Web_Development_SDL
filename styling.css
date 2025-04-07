@@ -131,7 +131,8 @@ tr {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: "Georgia", Times, serif;
   }
 
   /*Styling to make background of index page the image at 50% transparency*/
