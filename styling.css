@@ -64,7 +64,7 @@ h2 {
     text-align: center;
 }
 
-/*Table styling class*/
+/*Table styling class row styling with bottom border*/
 .table {
     border: 2px solid;
     border-color: black;
@@ -72,6 +72,11 @@ h2 {
     padding: 5px;
     background-color: whitesmoke;
     align-self: center;
+    border-style: inset;
+} 
+
+tr {
+  border-bottom: 1px solid black;
 }
 
 /*Grid styling classes for summary page*/
