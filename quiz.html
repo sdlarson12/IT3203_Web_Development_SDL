@@ -112,6 +112,7 @@
         }
         else score += 0;
 
+        /*Set PassFail variable to provide feedback to user based on score result*/
         let PassFail = ""
         if (score > 3){
           PassFail = "Congratulations, you passed!"
@@ -120,6 +121,7 @@
           PassFail = "You did not pass. Please try again."
         }
 
+        /*innerHTML allows dynamic content of javascript variables to be included in HTML and displayed to the user*/
         result.innerHTML = `
           <h3>Quiz Results</h3>
           <p id = "p">Your score is ${score}/${total}</p>
@@ -135,8 +137,10 @@
           `;
       }
     </script>
+    <!--Hyperlink to allow users to retake the quiz-->
     <p id = "p">Click <a href="quiz.html"> here</a> to retake the quiz!</p>
     <div></div>
+    <!--Menu Links-->
     <a class = "links" href = "summary.html">Summary</a>
     <a class = "links" href = "history.html">History</a>
     <a class = "links" href = "sources.html">Sources</a>
