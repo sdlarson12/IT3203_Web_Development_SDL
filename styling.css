@@ -10,7 +10,7 @@
 
 .links {
     color: whitesmoke;
-    background-color: #efeb00;
+    background-color: navy;
     font-size: 20px;
     font-family: "Georgia", Times, serif;
     padding: 20px;
@@ -22,7 +22,7 @@
  
 /*Link hover and click styling*/
 .links:hover, .links:active {
-    color: #efeb00;
+    color: navy;
     background-color: whitesmoke;
     font-size: 20px;
     font-family: "Georgia", Times, serif;
@@ -115,44 +115,77 @@ tr {
     grid-area: content;
   }
 
-  /*Image styling*/
-  .image{
-    align-items: center;
-    height: 50%;
-    width: 50%;
-  }
+/*Image styling*/
+.image{
+  align-items: center;
+  height: 50%;
+  width: 50%;
+}
 
-  /*Button styling*/
-  .button {
-    background-color: whitesmoke;
-    border: none;
-    color: pink;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    font-family: "Georgia", Times, serif;
-  }
+/*Button styling*/
+.button {
+  background-color: whitesmoke;
+  border: none;
+  color: pink;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Georgia", Times, serif;
+}
 
-  /*Styling to make background of index page the image at 50% transparency*/
-  .indexBG {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    z-index: 1;
-  }
-  
-  .indexBG::before {
-    content: "";
-    background: url("Images/HTMLCodeImage.PNG") no-repeat center center fixed;
-    background-size: cover;
-    opacity: 0.3;
-    position: fixed;
-    top: 0;
-    left: 0;
+/*Styling to make background of index page the image at 50% transparency*/
+.indexBG {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  z-index: 1;
+}
+
+.indexBG::before {
+  content: "";
+  background: url("Images/HTMLCodeImage.PNG") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#container 
+  {
     width: 100%;
-    height: 100%;
-    z-index: -1;
+    margin: auto;
+    border: 1px lightblue
+  }
+
+  @media screen and (min-width:480px)
+  {
+    #container
+      {
+        width: 80%;
+        background-color: yellow;
+        color: whitesmoke;
+      }
+  }
+
+  @media (min-width:800px)
+  {
+    #container
+    {
+      background-color: green;
+    }
+  }
+
+  @media (min-width: 1200px)
+  {
+    #container
+    {
+      background-color: purple;
+    }
   }
