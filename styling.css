@@ -124,9 +124,9 @@ tr {
 
 /*Button styling*/
 .button {
-  background-color: whitesmoke;
+  background-color: pink;
   border: none;
-  color: pink;
+  color: whitesmoke;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
