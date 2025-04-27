@@ -1,36 +1,36 @@
 /*Link styling*/
 .links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  width: 200px;
-  border: black;
-}
-
-.links {
     color: whitesmoke;
     background-color: navy;
+    display: flex;
+    justify-content: center;
     font-size: 20px;
     font-family: "Georgia", Times, serif;
     padding: 20px;
     text-align: center;
-    gap: 20px;
-    width: 200px;
-    border: black;
+    gap: 10px;
+    border: 5px solid gold;
+    max-width: 150px;
+    border-style: outset;
+    border-radius: 25px;
 }
  
 /*Link hover and click styling*/
 .links:hover, .links:active {
     color: navy;
-    background-color: whitesmoke;
-    font-size: 20px;
-    font-family: "Georgia", Times, serif;
-    padding: 20px;
-    text-align: center;
-    gap: 20px;
-    width: 200px;
-    border: black;
+    background-color: gold;
+    border: 5px solid whitesmoke;
+    border-style: inset;
+}
+
+/*Menu options at top of page*/
+.options{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 10px;
+  position: relative;
 }
 
 /*Primary heading styles*/
@@ -43,21 +43,24 @@ head, h1{
 
 /*Secondary heading styles*/
 h2 {
-    color: whitesmoke;
+    color: navy;
     font-family: Arial, Verdana, sans-serif;
     text-align: center;
     text-decoration: underline;
+    border: 2px solid gold;
+    border-radius: 50px;
+    background-color: whitesmoke;
 }
   
 /*Body class for consistent styling*/
 .body {
-      background-color: powderblue;
       font-family: "Lucida Console", "Courier New", monospace;
   }
 
 /*Paragraph styling*/  
 .p {
     font-family: Arial, Verdana, sans-serif;
+    font-size: 18px;
 }
 
 /*Caption styling class*/
@@ -118,13 +121,11 @@ tr {
 /*Image styling*/
 .image{
   align-items: center;
-  height: 50%;
-  width: 50%;
 }
 
 /*Button styling*/
 .button {
-  background-color: pink;
+  background-color: mediumvioletred;
   border: none;
   color: whitesmoke;
   padding: 15px 32px;
@@ -157,35 +158,91 @@ tr {
   z-index: -1;
 }
 
-#container 
-  {
+#container{
     width: 100%;
     margin: auto;
     border: 1px lightblue
+}
+
+  
+
+
+ /*Media queries for different pages sizes. First optimized for mobile at 480px, then laptops at 800px, then desktops at 1200px*/ 
+
+  @media screen and (min-width:600px)
+  {
+    h1{
+      font-size: 70px;
+    }
+    .button{
+      width: auto; 
+    }
+    .p{
+      font-size: 20;
+    }/*
+    .links{
+      flex-direction: row;
+      width: 40%;
+      font-size: 18px;
+    }
+    .links:hover, .links:active {
+      color: navy;
+      background-color: whitesmoke;
+      font-size: 18;
+      font-family: "Georgia", Times, serif;
+      padding: 20px;
+      text-align: center;
+      gap: 20px;
+      width: 40%;
+      border: 1px solid black;
+  }*/
+  .image{
+    width: 30%;
+    height: 30%;  
+  }
   }
 
-  @media screen and (min-width:480px)
+  @media screen and (min-width:800px)
   {
-    #container
-      {
-        width: 80%;
-        background-color: yellow;
-        color: whitesmoke;
-      }
-  }
-
-  @media (min-width:800px)
-  {
-    #container
-    {
-      background-color: green;
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "menu content";
+      grid-template-columns: 1fr 3fr;
+      gap: 20px;
+      padding: 20px;
+    }
+  
+    .container > div {
+      padding: 20px;
+    }
+  
+    .table {
+      width: 80%;
+      margin: auto;
+    }
+    .image{
+      width: 50%;
+      height: 50%;  
     }
   }
 
-  @media (min-width: 1200px)
+  @media screen and (min-width: 1200px)
   {
-    #container
-    {
-      background-color: purple;
+    h1{
+      font-size: 70px;
+    }
+    .button{
+      width: auto; 
+    }
+    .links{
+      flex-direction: row;
+      width: 80%;
+      font-size: 18px;
+    }
+    .image{
+      width: auto;
+      height: auto;  
     }
   }

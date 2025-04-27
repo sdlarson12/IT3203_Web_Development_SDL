@@ -8,26 +8,41 @@
         <link rel="stylesheet" href="styling.css">
     </head>
     <body class = "body">
+        <!--Menu Options at top of page-->
+        <div class = "options">
+            <a class = "links" href = "summary.html">Summary</a>
+            <a class = "links" href = "additions.html">Enhancements</a>
+            <a class = "links" href = "history.html">History</a>
+            <a class = "links" href = "sources.html">Sources</a>
+            <a class = "links" href = "https://sdlarson12.github.io/IT3203_Web_Development_SDL/">Back to Home</a>
+            <a class = "links" href = "quiz.html">Take the Quiz!</a>
+        </div>
         <!--Body with grid logic for organizing image and summary into boxes-->
         <div class = "container">
             <!--Using more defined classes to specify styling for each portion and the overall organization-->
             <div class = "header"><h2>Enhancements to HTML</h2></div>
-            <div class = "menu"><img src="Images\HTMLCodeImage.PNG" alt = "Sample Code"></div>
+            <div class = "menu">
+                <script>
+                    function myFunction() {
+                      document.getElementById("demo").innerHTML = "Javas.";
+                    }
+                </script>                        
+                <p id= "p">Javascript enhances HTML by adding an interactive element to documents.</p>                        
+                <button type="button" class = "button" onclick="myFunction()">Try it!</button>
+            </div>
             <div class = "content">
                 <p id = "p">In addition to its content maturation since inception, HTML has been enhanced by Cascading Style Sheets (CSS) and javascript.
                     CSS allows complex formatting that was limited with just HTML, and javascript adds a dynamic component where users can interact with the document.
-                    These additions to HTML have made it into the web experience we know today. An example of this code is shown on the image to the left.
+                    These additions to HTML have made it into the web experience we know today.
                 </p>
+                <p id = "p">An example of javascript in action is shown to the left. A button tag with a javascript function 
+                    changes the display of the text inside of the document. Without this added functionality, HTML would only be capable of displaying information as a document.
+                    Thanks to enhancements like javascript, content becomes interactive and more engaging for users.
+                </p>
+                <p id = "p">For a more complete experience of javascript and to test your knowledge, try the quiz at the end of the lesson!</p>
                 <div></div>
-                <p id = "p">Sources are cited<a href="sources.html"> here</a> </p>
+                <p id = "p">Sources are cited<a href="sources.html"> here.</a> </p>            
             </div>
         </div>
-        <!--Page navigation-->
-        <a class = "links" href = "summary.html">HTML</a>
-        <a class = "links" href = "additions.html">Enhancements</a>
-        <a class = "links" href = "history.html">History</a>
-        <a class = "links" href = "sources.html">Sources</a>
-        <a class = "links" href = "https://sdlarson12.github.io/IT3203_Web_Development_SDL/">Back to Home</a>
-        <a class = "links" href = "quiz.html">Take the Quiz!</a>
     </body>
 </html>
