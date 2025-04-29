@@ -1,4 +1,4 @@
-/*Link styling*/
+/*Link styling for menu options*/
 .links {
     color: whitesmoke;
     background-color: navy;
@@ -30,13 +30,26 @@
   flex-wrap: wrap;
   padding: 10px;
   gap: 10px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: white;
+}
+
+/*In-line hyperlink styling to accommodate media queries*/
+.hyperlink{
+  display: flex;
+  flex-wrap: wrap; 
+  flex: 1 1 40px;
+  min-width: 40px;
 }
 
 /*Primary heading styles*/
 head, h1{
-
     font-family: 'Brush Script MT', cursive;
+    color: navy;
     font-size: 80px;
     text-align: center;
   }
@@ -55,6 +68,7 @@ h2 {
 /*Body class for consistent styling*/
 .body {
       font-family: "Lucida Console", "Courier New", monospace;
+      margin-top: 300px;
   }
 
 /*Paragraph styling*/  
@@ -85,10 +99,9 @@ tr {
   border-bottom: 1px solid black;
 }
 
-/*Grid styling classes for summary page*/
+/*Grid styling classes for page layout*/
 .container {
     display: grid;
-    background-color: powderblue;
     grid-template-areas:
       "header header"
       "menu content";
@@ -121,7 +134,14 @@ tr {
 /*Image styling*/
 .image{
   align-items: center;
+  max-width: 75%;
 }
+
+.code{
+  align-items: center;
+  max-width: 75%;
+}
+
 
 /*Button styling*/
 .button {
@@ -161,7 +181,6 @@ tr {
 #container{
     width: 100%;
     margin: auto;
-    border: 1px lightblue
 }
 
   
@@ -169,38 +188,36 @@ tr {
 
  /*Media queries for different pages sizes. First optimized for mobile at 480px, then laptops at 800px, then desktops at 1200px*/ 
 
-  @media screen and (min-width:600px)
+  @media screen and (min-width:400px)
   {
     h1{
       font-size: 70px;
+      margin-top: 300px;
     }
     .button{
       width: auto; 
     }
     .p{
       font-size: 20;
-    }/*
-    .links{
-      flex-direction: row;
-      width: 40%;
-      font-size: 18px;
     }
-    .links:hover, .links:active {
-      color: navy;
-      background-color: whitesmoke;
-      font-size: 18;
-      font-family: "Georgia", Times, serif;
-      padding: 20px;
-      text-align: center;
-      gap: 20px;
-      width: 40%;
-      border: 1px solid black;
-  }*/
-  .image{
-    width: 30%;
-    height: 30%;  
+    .table{
+      width: 30%;
+    }
+    .image{
+      width: 75%;
+      height: 75%;  
+    }
+    .code{
+      max-width: 75%;
+    }
+    .container{
+      margin-top: 250px;
+    }
+    .hyperlink{
+      font-size: 10px ;
+    }
   }
-  }
+  
 
   @media screen and (min-width:800px)
   {
@@ -213,25 +230,25 @@ tr {
       gap: 20px;
       padding: 20px;
     }
-  
-    .container > div {
-      padding: 20px;
-    }
-  
-    .table {
-      width: 80%;
-      margin: auto;
-    }
     .image{
-      width: 50%;
-      height: 50%;  
+      width: 30%;
+      height: 30%;  
+    }
+    .code{
+      max-width: 100%;
+    }
+    .hyperlink{
+      font-size: 12px ;
+    }
+    .body{
+      margin-top: 200px;
     }
   }
 
   @media screen and (min-width: 1200px)
   {
     h1{
-      font-size: 70px;
+      margin-top: 100px;
     }
     .button{
       width: auto; 
@@ -242,7 +259,10 @@ tr {
       font-size: 18px;
     }
     .image{
-      width: auto;
-      height: auto;  
+      width: 80%;
+      height: 80%;  
+    }
+    .code{
+      max-width: 75%;
     }
   }

@@ -18,9 +18,11 @@
       <a class = "links" href = "https://sdlarson12.github.io/IT3203_Web_Development_SDL/">Back to Home</a>
       <a class = "links" href = "quiz.html">Take the Quiz!</a>
     </div>
+    <div></div>
+    <div></div>
     <!--Header for page-->
     <h2>Test Your Knowledge</h2>
-    <div></div>
+    
     <h3>How much do you know about the history of HTML pages? Find out below!</h3>
     <div></div>
     <form id = "quizForm" onsubmit = "score(event)">
@@ -38,11 +40,11 @@
       <p id="p">What was the name of the first graphic interface browser, released to the public in 1993?</p>
     
       <input type = "radio" id = "PictureBrowser" name = "MC2Answer" value = "PictureBrowser">
-      <label for="MC1">Picture Browser</label><br>
+      <label for="PicBr">Picture Browser</label><br>
       <input type = "radio" id = "MosaicBrowser" name = "MC2Answer" value = "MosaicBrowser">
-      <label for="MC2">Mosaic Browser</label><br>
+      <label for="MosBr">Mosaic Browser</label><br>
       <input type = "radio" id = "MozartBrowser" name = "MC2Answer" value = "MozartBrowser">
-      <label for="MC3">Mozart Browser</label><br>
+      <label for="MozBr">Mozart Browser</label><br>
 
       <!--Question 3: Multiple Choice-->
       <p id="p">Which of the below is the name of the styling language that enables design in HTML?</p>
@@ -50,9 +52,9 @@
       <input type = "radio" id = "CSS" name = "MC3Answer" value = "CSS">
       <label for="CSS">CSS</label><br>
       <input type = "radio" id = "CAS" name = "MC3Answer" value = "CAS">
-      <label for="MC2">CAS</label><br>
+      <label for="CAS">CAS</label><br>
       <input type = "radio" id = "SAS" name = "MC3Answer" value = "SAS">
-      <label for="MC3">SAS</label><br>
+      <label for="SAS">SAS</label><br>
 
       <!--Question 4: Multi-Select-->
       <p id="p">Which of the following are true statements? More than one answer may be selected.</p>
@@ -76,7 +78,7 @@
     <div id = "result"></div>
     <div></div>
     
-    <!--Javascript function to score answers and output results to the page-->
+    <!--Javascript function to score answers and output results to the page (Correct answers turn green after submission)-->
     <script>
       function score(event){
         event.preventDefault();
@@ -88,22 +90,29 @@
         const answer1 = document.querySelector('input[name="MC1Answer"]:checked');
         if (answer1.value === "1991") {
           score++
+          document.querySelector('label[for="MC3"]').style.color = "green";
+        } else {
+          score += 0;
         }
-        else score += 0;
+        
 
         /*Question 2 Answer Store*/
         const answer2 = document.querySelector('input[name="MC2Answer"]:checked');
         if (answer2.value === "MosaicBrowser") {
           score++
+          document.querySelector('label[for="MosBr"]').style.color = "green";
+        } else {
+          score += 0;
         }
-        else score += 0;
 
         /*Question 3 Answer Store*/
         const answer3 = document.querySelector('input[name="MC3Answer"]:checked');
         if (answer3.value === "CSS") {
           score++
+          document.querySelector('label[for="CSS"]').style.color = "green";
+        } else {
+          score += 0;
         }
-        else score += 0;
 
         /*Question 4 Answer Store. Get individual elements and one predicate statement to give a point or not.*/
         const MS1 = document.getElementById("MS1").checked;
