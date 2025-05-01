@@ -186,7 +186,7 @@ tr {
   
 
 
- /*Media queries for different pages sizes. First optimized for mobile at 480px, then laptops at 800px, then desktops at 1200px*/ 
+ /*Media queries for different pages sizes. First optimized for mobile at 400px, then laptops at 800px, then desktops at 1200px*/ 
 
   @media screen and (min-width:400px)
   {
