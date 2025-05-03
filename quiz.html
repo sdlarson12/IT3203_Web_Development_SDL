@@ -8,7 +8,7 @@
     <!--Pages styled by separate css file-->
     <link rel="stylesheet" href="styling.css">
   </head>
-  <body class = "body">
+  <body class = "indexBG">
     <!--Menu Options at top of page-->
     <div class = "options">
       <a class = "links" href = "summary.html">Summary</a>
@@ -21,62 +21,67 @@
     <div></div>
     <div></div>
     <!--Header for page-->
-    <h2>Test Your Knowledge</h2>
-    
-    <h3>How much do you know about the history of HTML pages? Find out below!</h3>
-    <div></div>
+    <div class = "padding">
+      <h2>Test Your Knowledge</h2>
+    </div>
+    <h3 class = "h3">How much do you know about the history of HTML pages? Find out below!</h3>
     <form id = "quizForm" onsubmit = "score(event)">
-      <!--Question 1: Multiple Choice-->
-      <p id="p">Which year was HTML first created?</p>
-    
-      <input type = "radio" id = "1985" name = "MC1Answer" value = "1985">
-      <label for="MC1">1985</label><br>
-      <input type = "radio" id = "1989" name = "MC1Answer" value = "1989">
-      <label for="MC2">1989</label><br>
-      <input type = "radio" id = "1991" name = "MC1Answer" value = "1991">
-      <label for="MC3">1991</label><br>
-
-      <!--Question 2: Mulitple Choice-->
-      <p id="p">What was the name of the first graphic interface browser, released to the public in 1993?</p>
-    
-      <input type = "radio" id = "PictureBrowser" name = "MC2Answer" value = "PictureBrowser">
-      <label for="PicBr">Picture Browser</label><br>
-      <input type = "radio" id = "MosaicBrowser" name = "MC2Answer" value = "MosaicBrowser">
-      <label for="MosBr">Mosaic Browser</label><br>
-      <input type = "radio" id = "MozartBrowser" name = "MC2Answer" value = "MozartBrowser">
-      <label for="MozBr">Mozart Browser</label><br>
-
-      <!--Question 3: Multiple Choice-->
-      <p id="p">Which of the below is the name of the styling language that enables design in HTML?</p>
-    
-      <input type = "radio" id = "CSS" name = "MC3Answer" value = "CSS">
-      <label for="CSS">CSS</label><br>
-      <input type = "radio" id = "CAS" name = "MC3Answer" value = "CAS">
-      <label for="CAS">CAS</label><br>
-      <input type = "radio" id = "SAS" name = "MC3Answer" value = "SAS">
-      <label for="SAS">SAS</label><br>
-
-      <!--Question 4: Multi-Select-->
-      <p id="p">Which of the following are true statements? More than one answer may be selected.</p>
-    
-      <input type="checkbox" id="MS1" name="MSAnswer" value="MS1">
-      <label for="MS1"> Tim Berners-Lee was the creator of HTML</label><br>
-      <input type="checkbox" id="MS2" name="MSAnswer" value="MS2">
-      <label for="MS2"> HTML provides the formatting and stylistic coding for websites</label><br>
-      <input type="checkbox" id="MS3" name="MSAnswer" value="MS3">
-      <label for="MS3"> Javascript adds a dynamic and interactive experience on HTML documents</label><br>
-    
-      <!--Question 5: Fill-In Answer-->
-      <p id="p">What is the current version of HTML that is approved by W3C?</p>
-    
-      <label for="Answer5">Standard Name: </label><br>
-      <input type="text" id="Answer5" name="Answer5" value=""><br><br maxlength = "20">
-
+      <div class = "cards">
+        <!--Question 1: Multiple Choice-->
+        <p id="p">Which year was HTML first created?</p>
+      
+        <input type = "radio" id = "1985" name = "MC1Answer" value = "1985">
+        <label for="MC1">1985</label><br>
+        <input type = "radio" id = "1989" name = "MC1Answer" value = "1989">
+        <label for="MC2">1989</label><br>
+        <input type = "radio" id = "1991" name = "MC1Answer" value = "1991">
+        <label for="MC3">1991</label><br>
+      </div>
+      <div class = "cards">
+        <!--Question 2: Mulitple Choice-->
+        <p id="p">What was the name of the first graphic interface browser, released to the public in 1993?</p>
+      
+        <input type = "radio" id = "PictureBrowser" name = "MC2Answer" value = "PictureBrowser">
+        <label for="PicBr">Picture Browser</label><br>
+        <input type = "radio" id = "MosaicBrowser" name = "MC2Answer" value = "MosaicBrowser">
+        <label for="MosBr">Mosaic Browser</label><br>
+        <input type = "radio" id = "MozartBrowser" name = "MC2Answer" value = "MozartBrowser">
+        <label for="MozBr">Mozart Browser</label><br>
+      </div>
+      <div class = "cards">
+        <!--Question 3: Multiple Choice-->
+        <p id="p">Which of the below is the name of the styling language that enables design in HTML?</p>
+      
+        <input type = "radio" id = "CSS" name = "MC3Answer" value = "CSS">
+        <label for="CSS">CSS</label><br>
+        <input type = "radio" id = "CAS" name = "MC3Answer" value = "CAS">
+        <label for="CAS">CAS</label><br>
+        <input type = "radio" id = "SAS" name = "MC3Answer" value = "SAS">
+        <label for="SAS">SAS</label><br>
+      </div>
+      <div class = "cards">
+        <!--Question 4: Multi-Select-->
+        <p id="p">Which of the following are true statements? More than one answer may be selected.</p>
+      
+        <input type="checkbox" id="MS1" name="MSAnswer" value="MS1">
+        <label for="MS1"> Tim Berners-Lee was the creator of HTML</label><br>
+        <input type="checkbox" id="MS2" name="MSAnswer" value="MS2">
+        <label for="MS2"> HTML provides the formatting and stylistic coding for websites</label><br>
+        <input type="checkbox" id="MS3" name="MSAnswer" value="MS3">
+        <label for="MS3"> Javascript adds a dynamic and interactive experience on HTML documents</label><br>
+      </div>
+      <div class = "cards">
+        <!--Question 5: Fill-In Answer-->
+        <p id="p">What is the current version of HTML that is approved by W3C?</p>
+      
+        <label for="Answer5">Standard Name: </label><br>
+        <input type="text" id="Answer5" name="Answer5" value=""><br><br maxlength = "20">
+      </div>
       <!--Submit Button-->
-      <button type="submit" class = "button">Submit Answers</button>
+      <div class = "button-center">
+        <button type="submit" class = "button">Submit Answers</button>
+      </div>
     </form>
-    <div id = "result"></div>
-    <div></div>
     
     <!--Javascript function to score answers and output results to the page 
     (Correct answers turn green after submission for multiple choice)-->
@@ -157,7 +162,7 @@
       }
     </script>
     <!--Hyperlink to allow users to retake the quiz-->
-    <p id = "p">Click <a href="quiz.html"> here</a> to retake the quiz!</p>
+    <h3 class = "h3">Click <a href="quiz.html"> here</a> to retake the quiz!</h3>
     <div></div>
   </body>
 </html>

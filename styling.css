@@ -52,6 +52,7 @@ head, h1{
     color: navy;
     font-size: 80px;
     text-align: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);    
   }
 
 /*Secondary heading styles*/
@@ -63,6 +64,14 @@ h2 {
     border: 2px solid gold;
     border-radius: 50px;
     background-color: whitesmoke;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.h3{
+  color: navy;
+  font-family: Arial, Verdana, sans-serif;
+  text-align: center;
+  border-radius: 50px;
 }
   
 /*Body class for consistent styling*/
@@ -151,9 +160,13 @@ tr {
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 20px;
   font-family: "Georgia", Times, serif;
+}
+
+.button-center{
+  display: flex;
+  justify-content: center;
 }
 
 /*Styling to make background of index page the image at 50% transparency*/
@@ -183,7 +196,23 @@ tr {
     margin: auto;
 }
 
-  
+/*Styling for quiz questions into cards*/
+.cards {
+  font-family: "Lucida Console", "Courier New", monospace;
+  background-color: whitesmoke;
+  border: 2px solid mediumvioletred;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+/*Additional padding for non-grid pages*/
+.padding{
+  margin-top: 120px;
+}
+
 
 
  /*Media queries for different pages sizes. First optimized for mobile at 400px, then laptops at 800px, then desktops at 1200px*/ 
@@ -216,6 +245,9 @@ tr {
     .hyperlink{
       font-size: 10px ;
     }
+    .padding{
+      margin-top:300px;
+    }
   }
   
 
@@ -242,6 +274,9 @@ tr {
     }
     .body{
       margin-top: 200px;
+    }
+    .padding{
+      margin-top:200px;
     }
   }
 
@@ -274,5 +309,11 @@ tr {
     }
     .hyperlink{
       font-size: 16px;
+    }
+    .cards {
+      max-width: 50%;
+    }
+    .padding{
+      margin-top:120px;
     }
   }
